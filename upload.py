@@ -156,12 +156,12 @@ def main():
 def upload(wazimap_endpoint, wazimap_token, dataset_id, file_path):
     url = f"{wazimap_endpoint}/api/v1/datasets/{dataset_id}/upload/"
 
-    # headers = {'authorization': f"Token {wazimap_token}"}
-    # files = {'file': open(file_path, 'rb')}
-    # payload = {'update': True, 'overwrite': True}
+    headers = {'authorization': f"Token {wazimap_token}"}
+    files = {'file': open(file_path, 'rb')}
+    payload = {'update': True, 'overwrite': True}
 
-    # r = requests.post(url, headers=headers, data=payload, files=files)
-    # r.raise_for_status()
+    r = requests.post(url, headers=headers, data=payload, files=files)
+    r.raise_for_status()
 
 
 if __name__ == "__main__":
