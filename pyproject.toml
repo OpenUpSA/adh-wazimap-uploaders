@@ -8,7 +8,7 @@ authors = ["JD Bothma <jd@openup.org.za>"]
 python = "^3.9"
 requests = "2.25.1"
 pandas = "^1.2.4"
-numpy = "^1.20.2"
+numpy = "^1.22.0"
 
 [tool.poetry.dev-dependencies]
 
